@@ -227,10 +227,14 @@ input[type="button"].button-primary:focus {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
 input[type="search"],
+input[type="number"],
 input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
 textarea,
 select {
   height: 38px;
@@ -240,27 +244,36 @@ select {
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
-/* Removes awkward default styles on some inputs for iOS */
+/* Removes awkard default styles on some inputs for iOS */
 input[type="email"],
 input[type="search"],
+input[type="number"],
 input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none; }
+          appearance: none;
+}
 textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px; }
 input[type="email"]:focus,
 input[type="search"]:focus,
+input[type="number"]:focus,
 input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
 textarea:focus,
 select:focus {
   border: 1px solid #33C3F0;
@@ -344,6 +357,7 @@ fieldset {
   margin-bottom: 1.5rem; }
 pre,
 blockquote,
+form,
 dl,
 figure,
 table,
@@ -376,8 +390,8 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
-  
+  border-top: 1px solid #E1E1E1;
+}
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
